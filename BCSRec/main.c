@@ -82,11 +82,13 @@ void setWidth(int input, int *width) {
 	}
 }
 
+//Q1TEST: Get a length and width and calculate perimeter of a rectangle by adding the 2 values with each value being used twice
 int getPerimeter(int *length, int *width) {
 	int perimeter = *length + *length + *width;
 	return perimeter;
 }
 
+//Q1TEST: Get a length and width and calculate area of a rectangle by multiplying the 2 values
 int getArea(int *length, int *width) {
 	int area = *length * *width;
 	return area;
