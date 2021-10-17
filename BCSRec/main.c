@@ -70,12 +70,14 @@ int getIntInput(char message[]) {
 	return input;
 }
 
+// Q2TEST: Receive an input and set the length value as the input as long as it is in the range of 1 - 99
 void setLength(int input, int *length) {
 	if (input >= 0 && input < 100) {
 		*length = input;
 	}
 }
 
+// Q2TEST: Receive an input and set the width value as the input as long as it is in the range of 1 - 99
 void setWidth(int input, int *width) {
 	if (input > 0 && input <= 100) {
 		*width = input;
