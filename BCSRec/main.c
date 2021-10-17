@@ -72,21 +72,21 @@ int getIntInput(char message[]) {
 
 // Q2TEST: Receive an input and set the length value as the input as long as it is in the range of 1 - 99
 void setLength(int input, int *length) {
-	if (input >= 0 && input < 100) {
+	if (input > 0 && input < 100) {
 		*length = input;
 	}
 }
 
 // Q2TEST: Receive an input and set the width value as the input as long as it is in the range of 1 - 99
 void setWidth(int input, int *width) {
-	if (input > 0 && input <= 100) {
+	if (input > 0 && input < 100) {
 		*width = input;
 	}
 }
 
 //Q1TEST: Get a length and width and calculate perimeter of a rectangle by adding the 2 values with each value being used twice
 int getPerimeter(int *length, int *width) {
-	int perimeter = *length + *length + *width;
+	int perimeter = *length + *length + *width + *width;
 	return perimeter;
 }
 
